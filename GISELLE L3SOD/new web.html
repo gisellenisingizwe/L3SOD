@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kira Clinic</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    margin:0;
+    background:#fff;
+}
+
+/* TOP HEADER */
+.header{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:34px;
+}
+
+/* SECTION TITLE */
+.title{
+    text-align:center;
+    margin:40px 0;
+    font-size:26px;
+    color:#1f1f1f;
+}
+
+/* SERVICE CONTAINER */
+.service{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:25px;
+    padding:20px 10%;
+    margin-bottom:20px;
+}
+
+/* IMAGE */
+.service img{
+    width:280px;
+    height:170px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+/* TEXT */
+.text{
+    max-width:400px;
+}
+
+.text h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+.text p{
+    font-size:14px;
+    color:#444;
+}
+
+/* alternating layout like your image */
+.service:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+/* FOOTER */
+.footer{
+    background:#1f1f1f;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .service{
+        flex-direction:column;
+        text-align:center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <h1>Kira Clinic</h1>
+    <p>Quality Healthcare Services</p>
+</div>
+
+<!-- SERVICES TITLE -->
+<h2 class="title">Our Services</h2>
+
+<!-- SERVICE 1 -->
+<div class="service">
+    <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f6a7?auto=format&fit=crop&w=600&q=80">
+    <div class="text">
+        <h3>Treatment for Illness</h3>
+        <p>We diagnose and treat different diseases using modern medical equipment and qualified doctors.</p>
+    </div>
+</div>
+
+<!-- SERVICE 2 -->
+<div class="service">
+    <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=600&q=80">
+    <div class="text">
+        <h3>Basic Laboratory</h3>
+        <p>We provide accurate laboratory tests with fast and reliable results for better treatment.</p>
+    </div>
+</div>
+
+<!-- SERVICE 3 -->
+<div class="service">
+    <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=600&q=80">
+    <div class="text">
+        <h3>Vaccinations for All</h3>
+        <p>Safe and effective vaccination services for children and adults to prevent diseases.</p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>&copy; 2026 Kira Clinic | All Rights Reserved</p>
+</div>
+
+</body>
+</html>

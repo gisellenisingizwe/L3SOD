@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nyagatare Clinic</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* NAV */
+nav{
+    background:#1e90ff;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:10px 15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* HERO */
+.hero{
+    background:url('https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h2{
+    font-size:36px;
+}
+
+.btn{
+    display:inline-block;
+    background:#1e90ff;
+    color:white;
+    padding:10px 20px;
+    margin-top:15px;
+    border-radius:5px;
+    text-decoration:none;
+}
+
+/* SECTIONS */
+.section{
+    padding:50px 0;
+    text-align:center;
+}
+
+.bg{
+    background:#f4f4f4;
+}
+
+/* CARDS */
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* DOCTORS */
+.doctor img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* CONTACT */
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+
+button{
+    background:#0a3d62;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:12px 15px;
+    border-radius:50%;
+    font-size:22px;
+    text-decoration:none;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Nyagatare Clinic</h1>
+    <p>Quality Healthcare You Can Trust</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Welcome to Nyagatare Clinic</h2>
+    <p>Modern healthcare with professional staff</p>
+    <a href="#contact" class="btn">Book Appointment</a>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+    <div class="container">
+        <h2>About Us</h2>
+        <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=900&q=80"
+        style="width:100%;max-width:600px;border-radius:10px;margin-top:15px;">
+        <p>Nyagatare Clinic itanga ubuvuzi bwiza ku baturage harimo gusuzuma no kuvura indwara zitandukanye.</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section bg">
+    <div class="container">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580281657527-47f249e8f6a7?auto=format&fit=crop&w=500&q=80"
+                style="width:100%;height:150px;object-fit:cover;border-radius:10px;">
+                <h3>Treatment</h3>
+                <p>Kuvura indwara zitandukanye</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=500&q=80"
+                style="width:100%;height:150px;object-fit:cover;border-radius:10px;">
+                <h3>Laboratory</h3>
+                <p>Ibizamini by’ukuri</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&w=500&q=80"
+                style="width:100%;height:150px;object-fit:cover;border-radius:10px;">
+                <h3>Maternal Care</h3>
+                <p>Ubufasha ku babyeyi n’abana</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="section">
+    <div class="container">
+        <h2>Our Doctors</h2>
+
+        <div class="cards">
+
+            <div class="card doctor">
+                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80">
+                <h3>Dr. Jean Claude</h3>
+                <p>General Physician</p>
+            </div>
+
+            <div class="card doctor">
+                <img src="https://images.unsplash.com/photo-1594824475317-d3e1d0d6c7d5?auto=format&fit=crop&w=500&q=80">
+                <h3>Dr. Aline</h3>
+                <p>Pediatric Specialist</p>
+            </div>
+
+            <div class="card doctor">
+                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80">
+                <h3>Dr. Patrick</h3>
+                <p>Lab Technician</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <p>
+            📍 Nyagatare District <br>
+            📞 +250 788000000 <br>
+            📧 info@nyagatareclinic.rw
+        </p>
+
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Nyagatare Clinic</p>
+</footer>
+
+<a href="https://wa.me/250788000000" class="whatsapp">💬</a>
+
+</body>
+</html>

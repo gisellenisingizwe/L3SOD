@@ -1,0 +1,592 @@
+# CPEC SAINT BABETH SCHOOL WEBSITE PROJECT
+
+## Complete Static Website (HTML, CSS & JavaScript)
+
+### 1. index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPEC SAINT BABETH</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <h1>CPEC SAINT BABETH</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#departments">Departments</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Welcome to CPEC SAINT BABETH</h2>
+            <p>
+                A modern private school located in Kigali providing quality
+                education in General and Technical studies.
+            </p>
+
+            <button id="applyBtn">Apply Now</button>
+        </div>
+    </section>
+
+
+    <!-- HOME SECTION -->
+    <section class="home-section">
+        <h2>Why Choose Our School?</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop" alt="Students">
+                <h3>Quality Education</h3>
+                <p>
+                    We provide excellent learning opportunities for all students.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="Computer Lab">
+                <h3>Technical Training</h3>
+                <p>
+                    Specialized training in Software Development and Multimedia.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop" alt="Learning">
+                <h3>Modern Workshops</h3>
+                <p>
+                    Students gain practical skills through real workshop practice.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- DEPARTMENTS -->
+    <section id="departments" class="departments">
+        <h2>Departments</h2>
+
+        <div class="department-container">
+
+            <div class="department-box">
+                <h3>Ordinary Level</h3>
+                <p>
+                    The school offers Ordinary Level classes including:
+                    S1, S2 and S3.
+                </p>
+            </div>
+
+            <div class="department-box">
+                <h3>Software Development</h3>
+                <p>
+                    Technical training at levels L3, L4 and L5.
+                    Students learn programming, web development and computer systems.
+                </p>
+            </div>
+
+            <div class="department-box">
+                <h3>Multimedia</h3>
+                <p>
+                    Students learn graphic design, video editing,
+                    photography and digital media skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- WORKSHOPS -->
+    <section id="workshops" class="workshops">
+        <h2>Our Workshops</h2>
+
+        <div class="workshop-grid">
+
+            <div class="workshop-card">
+                <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="Software Workshop">
+                <h3>Software Development Workshop</h3>
+                <p>
+                    Students practice coding, website development,
+                    programming and software projects.
+                </p>
+            </div>
+
+            <div class="workshop-card">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Multimedia Workshop">
+                <h3>Multimedia Workshop</h3>
+                <p>
+                    Students gain practical experience in graphic design,
+                    video production and digital communication.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+
+        <p>
+            CPEC SAINT BABETH is a private educational institution located in Kigali.
+            The school is committed to providing quality education and practical skills
+            to students through both general and technical studies.
+        </p>
+
+        <p>
+            Our mission is to prepare students for future careers by combining
+            classroom learning with practical workshop experience.
+        </p>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>School Contact Information</h3>
+                <p><strong>Location:</strong> Kigali, Rwanda</p>
+                <p><strong>Phone:</strong> +250 788 000 000</p>
+                <p><strong>Email:</strong> info@cpecsaintbabeth.com</p>
+            </div>
+
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Enter your name">
+                <input type="email" id="email" placeholder="Enter your email">
+                <textarea id="message" placeholder="Write your message"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 CPEC SAINT BABETH - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+```
+
+---
+
+## 2. style.css
+
+```css
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#003366;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ffcc00;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1600&auto=format&fit=crop');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-text{
+    position:relative;
+    z-index:1;
+    max-width:700px;
+}
+
+.hero-text h2{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero button{
+    padding:15px 35px;
+    border:none;
+    background:#ffcc00;
+    color:#000;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:white;
+}
+
+/* HOME SECTION */
+.home-section{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.home-section h2{
+    margin-bottom:40px;
+    font-size:36px;
+    color:#003366;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+    color:#003366;
+}
+
+.card p{
+    padding:0 20px 25px;
+}
+
+/* DEPARTMENTS */
+.departments{
+    padding:70px 10%;
+    background:#e9f2ff;
+    text-align:center;
+}
+
+.departments h2{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#003366;
+}
+
+.department-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:25px;
+}
+
+.department-box{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.department-box h3{
+    margin-bottom:15px;
+    color:#003366;
+}
+
+/* WORKSHOPS */
+.workshops{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.workshops h2{
+    font-size:36px;
+    margin-bottom:40px;
+    color:#003366;
+}
+
+.workshop-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+}
+
+.workshop-card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.workshop-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.workshop-card h3{
+    margin:15px 0;
+    color:#003366;
+}
+
+.workshop-card p{
+    padding:0 20px 25px;
+}
+
+/* ABOUT */
+.about{
+    padding:70px 10%;
+    background:#003366;
+    color:white;
+    text-align:center;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* CONTACT */
+.contact-section{
+    padding:70px 10%;
+}
+
+.contact-section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:#003366;
+    font-size:36px;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:40px;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info h3{
+    margin-bottom:20px;
+    color:#003366;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.1);
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+form textarea{
+    height:150px;
+    resize:none;
+}
+
+form button{
+    background:#003366;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    cursor:pointer;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+form button:hover{
+    background:#ffcc00;
+    color:black;
+}
+
+/* FOOTER */
+footer{
+    background:#001f3f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-text h2{
+        font-size:35px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+    }
+}
+```
+
+---
+
+## 3. script.js
+
+```javascript
+// APPLY NOW BUTTON
+const applyBtn = document.getElementById("applyBtn");
+
+applyBtn.addEventListener("click", function(){
+    alert("Thank you for choosing CPEC SAINT BABETH! Admissions are now open.");
+});
+
+
+// CONTACT FORM VALIDATION
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    if(name === "" || email === "" || message === ""){
+        alert("Please fill in all fields.");
+    }
+    else{
+        alert("Message sent successfully!");
+        contactForm.reset();
+    }
+});
+
+
+// DYNAMIC GREETING MESSAGE
+window.onload = function(){
+
+    const hour = new Date().getHours();
+
+    if(hour < 12){
+        console.log("Good Morning Visitor!");
+    }
+    else if(hour < 18){
+        console.log("Good Afternoon Visitor!");
+    }
+    else{
+        console.log("Good Evening Visitor!");
+    }
+}
+```
+
+---
+
